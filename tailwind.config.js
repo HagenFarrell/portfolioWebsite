@@ -1,9 +1,10 @@
 module.exports = {
-  content: [
-    './src/**/*.{html,js}', // Add paths to all of your template files
-    './index.html',          // Ensure index.html is included
-  ],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {},
+  },
+  variants: {
     extend: {},
   },
   plugins: [],
